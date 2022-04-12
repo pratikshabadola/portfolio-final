@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="images/bookfavicon.png">
+	<link rel="stylesheet" href="css/html5reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Book Club</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QEQD55M1LC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QEQD55M1LC');
+</script>
+
+</head>
+<body>
+	<a class = "skip" href="#main">Skip to main content</a>
+	<header>
+		<nav>
+			<ul>
+				<li > <a href="index.html">Home</a></li>
+				<li > <a href="reviews.html">Reviews</a></li>
+				<li > <a href="tbr.html">TBR</a></li>
+				<li class = "active"> <a href="bookclub.html">Join Us</a></li>
+			</ul>
+		</nav>
+		<h1>Join my book club!</h1>
+
+	</header>
+	
+	<main>
+	<p id = "main">Every month, I host a book club over Zoom with a group of other folks who have read my book of the month! I've found that talking through
+		books is almost like reading them all over again, but with brand new eyes. It's amazing how much others' insights and perspectives
+		can change the meanings you derive from what you read. And the more diverse the perspectives the better! That is to say, this book club is a safe space for 
+		all regardless of race, sexual orientation, gender identity, physical ability, or immigration status. We're just a community that really loves 
+		to read and excitedly chatter about what we read! If that interests you, please fill in the intake form below so you can receive a Zoom link to 
+		next month's book club!</p>
+	<img class="landingpage" src = "images/bookclub.jpeg" alt="cup of coffee in the foreground, laptop with Zoom open in the background" width="200"/>
+
+	<p>Last month, we talked about the book American Dirt by Jeanine Cummins. This book cast a light on the cartel-violence in Mexico,
+		that drives millions to the United States border for refuge. The story followed a bookstore owner, Lydia, and her son Luca, who make that 
+		ardous journey north, when they are forced to flee when Lydia's husband, a journalist, writes unfavorably about the cartel in newspapers that causes
+		them to retaliate violently. This book was incredibly gripping, poignant and moving, and stirred up some interesting discussions around
+		U.S./Mexico border relations, the hardships of refugees and immigrants, and the crisis of targeted journalists - and consquently a targeted
+		democracy - in Mexico.
+	</p>
+	<img src = "images/americandirt.jpg" alt="A book cover with blue bird drawings on a white backdrop" width="200"/>
+
+	<form>
+		<fieldset>
+		  <legend>Intake Form</legend>
+	  
+		  <label for="name_id">Your Name</label>
+		  <input type="text" placeholder="Enter Your Name" id = "name_id" name="name" required>
+	  
+		  <label for="email_id">Your Email</label>
+		  <input type="email" placeholder="Enter Your Email" id = "email_id" name="email" required>
+
+		  <label for="city_id">Your City</label>
+		  <input type="email" placeholder="Enter Your City" id = "city_id" name="city" required>
+
+		  <label for="book_id">Your Favorite book</label>
+		  <textarea placeholder="Enter your favorite book" id = "book_id" name="book" required></textarea><br>
+	  
+		  <label for="msg">Let me know a little about you and why you're interested in joining!:</label>
+		  <textarea placeholder="Enter your message" id = "msg" name="mesg" required></textarea><br>
+	  
+		  <input type="submit" value = "Join">
+		</fieldset>
+	   </form>
+
+	</main>
+	<footer>
+		<p>Pratiksha Badola &copy; 2021</p>
+	</footer>
+</body>
+</html>
