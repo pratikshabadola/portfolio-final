@@ -68,7 +68,7 @@ li a{
 
 li.active {
     background-color: black;
-    font-weight:900;
+    text-transform: uppercase;
 }
 
 img {
@@ -141,12 +141,18 @@ body {
 .books-grid {
     display: grid;
     grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.books-grid .book {
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 .books-grid-reviews {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    align-items: center;
     flex-wrap: wrap;
 }
 
@@ -276,12 +282,13 @@ legend{
 }
 
 /* desktop view */
-@media screen and (min-width: 900px){
+@media screen and (min-width: 1100px){
     /* uses grid */
     .books-grid{
         grid-template-columns: 1fr 1fr 1fr;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
+        justify-items: start;
     }
 
     ul {
@@ -292,6 +299,12 @@ legend{
     .books-grid-reviews {
         flex-direction: row;
     }
+
+    .books-grid .book {
+        flex-direction: column;
+    }
+
+
 
 }
 
@@ -321,22 +334,26 @@ legend{
 }
 
 /* Media Query for Tablet */
-@media (min-width: 700px) and (max-width: 900px){
+@media (min-width: 800px) and (max-width: 1100px){
     /* grid */
     .books-grid{
         grid-template-columns: 1fr 1fr;
-        justify-content: center;
-        align-items: center;
+        justify-items:start;
     }
+
+    .books-grid .book {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+
     /* flex */
     .books-grid-reviews {
         flex-direction: row;
         row-gap: 40px;
+        column-gap: 40px;
         justify-content: space-around;
     }
 
-    .books-grid-reviews .book {
-        flex-grow: 2;
-    }
 
 }
